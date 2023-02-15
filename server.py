@@ -29,5 +29,5 @@ def predict(comment: ToxicComments):
 
 
 if __name__ == '__main__':
-    # Run server using given host and port
+    # запуск сервера, используя заданный хост и порт
     uvicorn.run(app, host='127.0.0.1', port=80)
