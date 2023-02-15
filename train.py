@@ -19,22 +19,12 @@ import joblib
 if __name__ == '__main__':
     # загружаем данные
     df = pd.read_csv("labeled.csv", sep=",")
-
+    
+    # приводим таргеты к целочисленному значению
     df["toxic"] = df["toxic"].apply(int)
 
+    # делим датасет на трейн и тест
     train_df, test_df = train_test_split(df, test_size=500)
-
-    snowball = SnowballStemmer(language="russian")
-    russian_stop_words = stopwords.words("russian")
-
-
-    # def tokenize_sentence(sentence: str, remove_stop_words: bool = True):
-    #     tokens = word_tokenize(sentence, language="russian")
-    #     tokens = [i for i in tokens if i not in string.punctuation]
-    #     if remove_stop_words:
-    #         tokens = [i for i in tokens if i not in russian_stop_words]
-    #     tokens = [snowball.stem(i) for i in tokens]
-    #     return tokens
 
     # векторизуем посты с применением токинайзера
     vectorizer = TfidfVectorizer(tokenizer=word_tokenize)
