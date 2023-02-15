@@ -16,3 +16,4 @@
 * [train.py](train.py) обучает модель с использованием набора данных labeled
 * [Dockerfile](Dockerfile) описывает образ Docker, который используется для запуска API
 * [requirements.txt](requirements.txt) содержит версии нужных библиотек 
+* [labeled.csv](labeled.csv) датасет с размеченными токсичными и не токсичными комментариями
