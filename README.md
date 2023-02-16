@@ -1,6 +1,6 @@
 # ml_model_toxic_comments_deployment
 
-# Пример того, как построить модель машинного обучения с использованием [Fast API](https://fastapi.tiangolo.com/) and [Docker](https://www.docker.com/)
+# Пример того, как построить модель машинного обучения с использованием [Fast API](https://fastapi.tiangolo.com/) и [Docker](https://www.docker.com/)
 
 ## Цель тренировки модели
 * Добиться точности 0.95 при хорошей полноте, для того что бы вероятность удалить не токсичный комментарий была низкая.
